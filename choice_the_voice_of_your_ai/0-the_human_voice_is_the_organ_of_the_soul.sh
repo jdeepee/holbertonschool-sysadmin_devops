@@ -20,6 +20,7 @@ case $gender in
 		say -vZarvox -o/tmp/$file.mp4 $message
 		scp /tmp/$file.mp4 admin@$ip_address:/www/data 
 		echo "Listen to the message on $ip_address/www/data/$file.mp4"
-		;;	*)
+		;;	
+	*)
 		echo "Unknown voice type"
 esac
