@@ -1,2 +1,2 @@
 #!/bin/bash
-ifconfig -a | grep HWaddr | cut -d ' ' -f 11
+ifconfig | grep -io '[0-9A-F]\{2\}\(:[0-9A-F]\{2\}\)\{5\}'
